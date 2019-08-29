@@ -1,0 +1,34 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    background-color: #939393;
+}
+#navbar{
+    margin: 5px;
+}
+#footer-img{
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+head,footer{
+    display: table-row;
+}
+footer{
+    width: 100%;
+    background-color:slategray;
+    margin: 5px;
+    border-radius: 10px;
+}
+main{
+    display: table-row;
+    height: 100%;
+}
