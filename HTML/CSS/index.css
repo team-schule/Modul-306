@@ -6,8 +6,11 @@ body{
     width: 100%;
     display: table;
     table-layout: fixed;
-    background-color: #939393;
+    background-color: lightgray;
+    background-image: url(../Bilder/backgroundIndex.jpg);
+    color:black;
 }
+
 #navbar{
     margin: 5px;
 }
@@ -24,7 +27,7 @@ head,footer{
 }
 footer{
     width: 100%;
-    background-color:slategray;
+    background-color:grey;
     margin: 5px;
     border-radius: 10px;
 }
@@ -37,4 +40,19 @@ h1{
 }
 h2{
     text-align: center;
+}
+#test {
+    text-align: center;
+    font-size: 24px;
+}
+#pictureYesOrNo{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 350px;
+    height: 220px;
+}
+#Text3{
+    text-align: center;
+    font-size: 20px;
 }
