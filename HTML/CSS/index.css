@@ -32,3 +32,9 @@ main{
     display: table-row;
     height: 100%;
 }
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
