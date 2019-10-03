@@ -1,0 +1,20 @@
+.schriften
+{
+    font-family: "Comic Sans MS", "Comic Sans";
+}
+
+body
+{
+    background-image: url("Bilder/paradies.jpg");
+}
+
+h1
+{
+    font-weight: bold;
+}
+
+#b_koffer
+{
+    width: 100px;
+    height: 100px;
+}
