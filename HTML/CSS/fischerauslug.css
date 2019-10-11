@@ -60,7 +60,7 @@ p{
     margin-left: 10%;
     margin-right: 10%;
 }
-/* Customize the label (the container) */
+
 .container {
     display: block;
     position: relative;
@@ -72,9 +72,9 @@ p{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-top: 10px;
   }
   
-  /* Hide the browser's default checkbox */
   .container input {
     position: absolute;
     opacity: 0;
@@ -83,7 +83,6 @@ p{
     width: 0;
   }
   
-  /* Create a custom checkbox */
   .checkmark {
     position: absolute;
     top: 0;
@@ -93,29 +92,24 @@ p{
     background-color:blue;
   }
   
-  /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color:orange;
   }
   
-  /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
     background-color: green;
   }
   
-  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
-  /* Show the checkmark when checked */
   .container input:checked ~ .checkmark:after {
     display: block;
   }
   
-  /* Style the checkmark/indicator */
   .container .checkmark:after {
     left: 9px;
     top: 5px;
@@ -127,3 +121,16 @@ p{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+button{
+  margin-left: auto;
+  margin-right: auto;
+}
+.fischbutton{
+  margin: 10px;
+  margin-left: 35%;
+}
+.beschreibung{
+  margin-left: -40%;
+  font-size: 0.9em;
+
+}
