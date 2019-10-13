@@ -3,27 +3,13 @@ body{
 }
 #TitelBild{
     width: 40%;
-    border-radius: 7px;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-#hechtbild{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 15%;
-    border-radius: 8px;
-    cursor: pointer;
-}
-#zanderbild{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 15%;
-    border-radius: 8px;
-    cursor: pointer;
-}
+
+#hechtbild,
 #karpfenbild{
     margin-left: auto;
     margin-right: auto;
@@ -32,27 +18,24 @@ body{
     border-radius: 8px;
     cursor: pointer;
 }
-#hechtdiv{
+#karpfendiv,
+#karpfenrute,
+#karpfenrolle,
+#karpfenschnur,
+#karpfenvorfach,
+#karpfenkoeder,
+#karpfenzubehoer,
+#hechtdiv,
+#hechtrute,
+#hechtrolle,
+#hechtschnur,
+#hechtvorfach,
+#hechthacken,
+#hechtkoeder,
+#hechtzubehoer{
     display: none;
 }
-#hechtrute{
-    display: none;
-}
-#hechtrolle{
-    display: none;
-}
-#hechtschnur{
-    display: none;
-}
-#hechtvorfach{
-    display: none;
-}
-#hechthacken{
-    display: none;
-}
-#hechtkoeder,#hechtzubehoer{
-    display: none;
-}
+
 h4,h5{
     text-align: center;
 }
