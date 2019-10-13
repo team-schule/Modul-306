@@ -50,10 +50,10 @@ body{
 #hechthacken{
     display: none;
 }
-#hechtkoeder{
+#hechtkoeder,#hechtzubehoer{
     display: none;
 }
-h4{
+h4,h5{
     text-align: center;
 }
 p{
