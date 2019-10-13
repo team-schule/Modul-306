@@ -65,8 +65,11 @@
                 füt deinen Zielfisch dabei hast
         </h5>
         <h2>Wähle deinen Zielfisch</h2>
+<!---->
+<!--Zielfisch Hecht-->
+<!---->
         <!-- Hecht Bild mit Click Funktion -->
-        <img src="Bilder/Hecht.jpg" id="hechtbild" alt="Hecht" onclick="divfunction()">
+        <img src="Bilder/Hecht.jpg" id="hechtbild" alt="Hecht" onclick="hechtdivfunction()">
         <div id="hechtdiv">
             <h2>Hecht Angeln</h2>
             <h4>Die wichtigsten Merkmale des Hechts:</h4>
@@ -248,7 +251,228 @@
                         </div>
                 </div>
             <br>
-            <img src="Bilder/Karpfe.jpg" id="karpfenbild" alt="Karpfe" onclick="">
+<!---->
+<!--Zielfisch Karpfe-->
+<!---->
+            <!--Karpfenbild mit Klick Finktion-->
+            <img src="Bilder/Karpfe.jpg" id="karpfenbild" alt="Karpfe" onclick="karpfendivfunction()">
+            <div id="karpfendiv">
+                <h2>Karpfen Angeln</h2>
+                <h4>Die wichtigsten Merkmale des Karpfens:</h4>
+                <p>&#10149; hochrückige, gedrungene und füllige Körperform, Buckel nach dem Kopf</p>
+                <p>&#10149; um das Maul stehen vier fleischige Bartfäden (2 lange, 2 kürzere), von denen die 2 größeren etwa am Mundwinkel, 
+                    die zwei kleineren über der Oberlippe sitzen</p>
+                <p>&#10149; der Bauchflossenansatz ist hinter der Rückenflosse</p>
+                <p>&#10149; die große Schwanzflosse ist tief gegabelt und abgerundet</p>
+                <p>&#10149; er hat paarige Flossen und seine Schwanzflosse ist gewöhnlich rötlich</p>
+                <!-- Karpfen Rute Button-->  
+                <div class="fischbutton">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="karpfenrutefunction()">Angelrute</button>
+                    <div id="karpfenrute">
+                        <p class="beschreibung">Der Blank ist sehr wichtig bei guten Ruten, denn er muss zum einen die Power besitzen um die 
+                            Montage weit bzw. zielgenau werfen zu können und zum anderen muss er dem Karpfen im Drill Paroli bieten, 
+                            indem er die Fluchtversuche gut abfängt und so ein ausschlitzen verhindert.
+                        </p>
+                        <!-- Karpfe Checkboxen Ruten -->
+                        <label class="container">1 Angelrute (12ft 3.25lbs)
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">2 Angelruten (12ft 3.25lbs)
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">3 Angelruten (12ft 3.25lbs)
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Karpfen Rolle Button-->
+                <div class="fischbutton">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="karpfenrollefunction()">Angelrolle</button>
+                    <div id="karpfenrolle">
+                        <p class="beschreibung">Je nach Einsatzgebiet gehören diverse Angelrollen in die Grundausrüstung eines jeden Anglers. 
+                            In der Regel handelt es sich dabei um Stationärrollen, mit denen sich nahezu alle Angelmethoden durchführen lassen. 
+                            Angelrollen mit speziellen Eigenschaften dienen für bestimmte Einsatzgebiete, so dass man sich genau 
+                            auf seinen Zielfisch vorbereiten und ihn somit effektiv beangeln kann. Beim Angeln auf größere Fische, 
+                            sollte besonders Acht auf die zu verwendeten Angelrollen gelegt werden, da enorme Kräfte beispielsweise 
+                            auf das Getriebe, die Bremse und die Rollenachse einwirken.
+                        </p>
+                        <!-- Karpfe Checkboxen Rollen -->
+                        <label class="container">1 Rolle mit Heckbremse
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">2 Rollen mit Heckbremse
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">3 Rollen mit Heckbremse
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">1 Rolle mit Frontbremse
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">2 Rollen mit Frontbremse
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">3 Rollen mit Frontbremse
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Karpfen Hauptschnur Button-->  
+                <div class="fischbutton">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="karpfenschnurfunction()">Hauptschnur</button>
+                    <div id="karpfenschnur">
+                        <p class="beschreibung">Monofile Karpfenschnur bietet sich in vielen Fällen an. Sie hat eine hohe Dehnungsfähigkeit, 
+                            was die starken Fluchten eines Karpfens optimal abfängt und so das Risiko eines Ausschlitzens auf ein Minimum reduziert. 
+                            Oftmals wird auf oder hinter Muschelbänken gefischt, was schädlich für jede Schnur sein kann. In so einem Fall ist monofile Karpfenschnur, 
+                            aufgrund ihrer höheren Abriebfestigkeit im Vergleich zu einer geflochtenen Karpfenschnur, überlegen. Eine monofile Karpfenschnur  
+                            ist resistenter gegen Abschürfungen und scharfen Kanten.
+                            Geflochtene Karpfenschnur wird oft beim Fischen auf große Distanzen verwendet, da hier die Bissanzeige optimal ist und mehr 
+                            Karpfenschnur auf die Karpfenrolle passt, als bei einer vergleichbaren monofilen Karpfenschnur.
+                        </p>
+                        <!-- Karpfe Checkboxen Hauptschnur -->
+                        <label class="container">Monofile 0,30mm 7,6kg
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Monofile 0,35mm 9,8kg 
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Geflochtene 0,20mm 15,90kg
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Geflochtene 0,30mm 22,73kg
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Karpfen Vorfach Button-->  
+                <div class="fischbutton">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="karpfenvorfachfunction()">Vorfach</button>
+                    <div id="karpfenvorfach">
+                        <p class="beschreibung">Die Vorfachschnur ist ein ganz wichtiger Teil der kompletten Karpfenmontage 
+                            und entscheidet manchmal über Erfolg und Misserfolg
+                        </p>
+                        <!-- Karpfe Checkboxen Vorfach -->
+                        <label class="container">Geflochtene, ummantelte Vorfachschnur 6,8kg
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Geflochtene, ummantelte Vorfachschnur 9,1kg 
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Geflochtene, ummantelte Vorfachschnur 11,4kg
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Geflochtene, ummantelte Vorfachschnur 15,87kg
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <!-- Karpfen Köder Button-->  
+                <div class="fischbutton">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="karpfenkoederfunction()">Köder</button>
+                    <div id="karpfenkoeder">
+                        <p class="beschreibung">Karpfenköder - Das Angeln auf Karpfen wird immer beliebter und mit der steigenden 
+                            Beliebtheit steigt auch das Angebot an Ködern zum Karpfenangeln, da immer mehr Biatfirmen auf den Markt drängen.
+                        </p>
+                        <!-- Karpfe Checkboxen Köder -->
+                        <label class="container">Boilies in gewünschter Geschmaksrichtung und Grösse
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Pellets in gewünschter Geschmacksrichtung und Grösse 
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Mais
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Tigernuss
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Brot
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Kartoffeln
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                 <!-- Karpfen Zubehör Button-->  
+                 <div class="fischbutton">
+                    <button type="button" class="btn btn-warning btn-lg" onclick="karpfenzubehoerfunction()">Zubehör</button>
+                    <div id="karpfenzubehoer">
+                        <!-- Karpfe Checkboxen Zubehör -->
+                        <label class="container">Hacken
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Bleie
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Abhackmatte
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Bissanzeiger
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Kescher
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Zelt
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Stuhl
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Rod Pod
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Schlafsack
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Tacklebox
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Taschen
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Waage
+                            <input type="checkbox">
+                                <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
             <br>
             <br>
             <h2>Weitere Fischarten folgen...</h2>
