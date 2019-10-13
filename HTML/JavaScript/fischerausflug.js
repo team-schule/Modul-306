@@ -54,3 +54,11 @@ function divfunction() {
       x.style.display = "block";
     }
   }
+  function zubehoerfunction() {
+    var x = document.getElementById("hechtzubehoer");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
