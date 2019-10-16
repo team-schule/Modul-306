@@ -129,3 +129,35 @@ function hechtdivfunction() {
       x.style.display = "block";
     }
   }
+
+//
+// Scripts on Page Load
+//
+// Text animation
+window.onload = function start() {
+  var string = "Wähle deinen Zielfisch";
+  var str = string.split("");
+  var el = document.getElementById('str2');
+  (function animate() {
+  str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+  var running = setTimeout(animate, 150);
+  setTimeout(color,4500);
+  setTimeout(bild,5500);
+  setTimeout(bild2,6500);
+  })();
+  };
+ 
+  // Wechselt die H2 überschrift von Schwarz nach Grün plus Schriftgrösse auf 2.5 em
+  function color(){
+    var element = document.getElementById('str2');
+    element.style.color = 'green';
+    element.style.fontSize = '2.5em';
+  }
+  // Zeigt das Hechrbild nach 5.5 Sekunden an 
+  function bild(){
+    document.getElementById('hechtbild').style.display = 'block';
+  }
+  // Zeigt das Karpfenbild nach 6.5 Sekunden an
+  function bild2(){
+    document.getElementById('karpfenbild').style.display = 'block';
+  }

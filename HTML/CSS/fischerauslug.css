@@ -11,13 +11,19 @@ body{
 
 #hechtbild,
 #karpfenbild{
+    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: none;
     width: 15%;
     border-radius: 8px;
     cursor: pointer;
 }
+#karpfenbild:hover,
+#hechtbild:hover{
+  border:3px solid green;
+}
+
 #karpfendiv,
 #karpfenrute,
 #karpfenrolle,
