@@ -1,11 +1,12 @@
 .schriften
 {
     font-family: "Comic Sans MS", "Comic Sans";
+    margin: 20px;
 }
 
 main
 {
-    background-image: url("Bilder/paradies.jpg");
+    background-color: whitesmoke;
 }
 
 h1
@@ -13,8 +14,149 @@ h1
     font-weight: bold;
 }
 
-#b_koffer
+h3
 {
-    width: 100px;
-    height: 100px;
+    color: white;
+}
+
+h4
+{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h5
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+#einleitung
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+.infos
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.kat
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.katbuttons
+{
+    background-color: black;
+    margin: 10px;
+    border: none;
+}
+
+.katbuttons:hover
+{
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+.katbuttons:active, .katbuttons:focus
+{
+    outline: none;
+}
+
+.katbuttons:hover .kategorienbilder
+{
+    border-radius: 40px;
+}
+
+.kategorienbilder
+{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+.tabbilder
+{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+#allgemein
+{
+    width: 1472px;
+}
+
+#detailallgemein,
+#detailfruehling,
+#detailsommer,
+#detailherbst,
+#detailwinter
+{
+    display: none;
+}
+
+.details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table, tr, td
+{
+    border: 3px solid black;
+}
+
+table
+{
+    margin-bottom: 30px;
+}
+
+.tableheader
+{
+    background-color: cadetblue;
+    font-weight: bold;
+}
+
+td
+{
+    height: 150px;
+    margin: 5px;
+    text-align: center;
+}
+
+.td1
+{
+    width: 150px;
+}
+
+.td2
+{
+    width: 600px;
+}
+
+.td3
+{
+    width: 150px;
+}
+
+.td4
+{
+    width: 150px;
 }

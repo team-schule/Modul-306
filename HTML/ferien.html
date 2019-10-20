@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/index.css"/>
     <link rel="stylesheet" href="CSS/ferien.css"/>
     <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/ferien.js"></script>
     <!-- Titel -->
     <title>Koffer packen für die Ferien</title>
   </head>
@@ -56,11 +57,249 @@
     <!-- Main (Hauptteil des Bodys) -->
     <main>
       <!-- Überschrift der Seite -->
-      <h1 class="schriften">Koffer packen für die Ferien</h1>
-      <img id="b_koffer" src="Bilder/koffer packen 1.jpg">
-      <h2 class="schriften">Mit unserer Checkliste beginnen für Sie die Ferien schon beim Koffer packen!
-      </h2>
-  
+      <h1 class="schriften" id="ueberschrift">Koffer packen für die Ferien</h1>
+      <!-- Kleine Erklärung -->
+      <h2 class="schriften">Mit unserer Checkliste beginnen für Sie die Ferien schon beim Koffer packen!</h2>
+      <p>Nachfolgend finden Sie die allgemeine Checkliste für die Ferien. 
+        Durch Klick auf die Buttons der einzelnen Jahreszeiten öffnen Sie die Spezial-Checklisten, welche nur die 
+        Dinge anzeigen, welche speiziell für die jeweilige Jahreszeit geeignet sind. Man kann die Ferien natürlich 
+        noch in viele Kategorien mehr einteilen. Beim Ausbau der Webseite werden diese nach und nach ergänzt werden. 
+        Diese Angaben sind Empfehlungen dazu, was man mindestens mitführen kann und keine Vorgaben!</p>
+      <p id="einleitung">Die Checklisten gelten für die folgenden Konditionen:<br>
+      -> Anzahl pro Person<br>
+      -> eine Woche Ferien<br>
+      -> unabhängig vom Geschlecht</p>
+      <!-- Flexbox mit Buttons zur Auswahl der Checklisten -->
+      <div class="kat">
+        <!-- Button Allgemeine Checkliste -->
+        <div>
+          <button class="katbuttons" id="allgemein" type="button" name="allgemein" onclick="allgemeinfunction()">
+            <h3 class="schriften">Checkliste Ferien Allgemein</h3>
+          </button>
+        </div>
+
+        <!-- Button Checkliste Fruehling -->
+        <div>
+          <button class="katbuttons" id="fruehling" type="button" name="fruehling" onclick="fruehlingfunction()">
+            <img class="kategorienbilder" src="Bilder/fruehlingsferien.jpg">
+            <h3 class="schriften">Frühlings-Ferien<br> Spezial</h3>
+          </button>
+        </div>
+        <!-- Button Checkliste Sommer -->
+        <div>
+          <button class="katbuttons" id="sommer" type="button" name="sommer" onclick="sommerfunction()">
+            <img class="kategorienbilder" src="Bilder/sommerferien.jpg">
+            <h3 class="schriften">Sommer-Ferien<br> Spezial</h3>
+          </button>
+        </div>
+        <!-- Button Checkliste Herbst -->
+        <div>
+          <button class="katbuttons" id="herbst" type="button" name="herbst" onclick="herbstfunction()">
+            <img class="kategorienbilder" src="Bilder/herbstferien.jpg">
+            <h3 class="schriften">Herbst-Ferien<br> Spezial</h3>
+          </button>
+        </div>
+        <!-- Button Checkliste Winter -->
+        <div>
+          <button class="katbuttons" id="winter" type="button" name="winter" onclick="winterfunction()">
+            <img class="kategorienbilder" src="Bilder/winterferien.jpg">
+            <h3 class="schriften">Winter-Ferien<br> Spezial</h3>
+          </button>
+        </div>
+      </div>
+      <!-- detailallgemein--------------------------------------------------------------------------------- -->
+      <div id="detailallgemein">
+        <div class="details">
+          <div><h4>Checkliste allgemein</h4></div>
+          <!-- Details Checkliste (Table)-->
+          <div>
+            <table>
+              <tr class="tableheader">
+                <td class="td1"><h5>Bild</h5></td>
+                <td class="td2"><h5>Beschreibung</h5></td>
+                <td class="td3"><h5>Anzahl</h5></td>
+                <td class="td4"><h5>Checkbox</h5></td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/Reisepass.jpg"></td>
+                <td><p class="infos">Der Reisepass oder eine Identitäts-Karte</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/ticket2.jpg"></td>
+                <td><p class="infos">Tickets für Flug, Bus, Zug oder Schiff</p></td>
+                <td><p class="infos">1 oder mehr</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/natel.png"></td>
+                <td><p class="infos">Natel</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/verpflegung.jpg"></td>
+                <td><p class="infos">Verpflegung für die Reise, falls notwendig</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/medikamente.jpg"></td>
+                <td><p class="infos">Medikamente, falls notwendig</p></td>
+                <td><p class="infos">Gemäss Absprache mit dem Arzt</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/unterwaesche.jpg"></td>
+                <td><p class="infos">Unterwäsche</p></td>
+                <td><p class="infos">7<br>pro Tag 1 Paar</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/hosen.jpg"></td>
+                <td><p class="infos">Hosen</p></td>
+                <td><p class="infos">5<br>2x kurze<br>3x lange</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/t-shirt.png"></td>
+                <td><p class="infos">T-Shirt's</p></td>
+                <td><p class="infos">7<br>1 pro Tag</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/pullover.jpg"></td>
+                <td><p class="infos">Pullover</p></td>
+                <td><p class="infos">5<br>2x dicke<br>3x dünne</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/socken.jpg"></td>
+                <td><p class="infos">Socken</p></td>
+                <td><p class="infos">7<br>pro Tag 1 Paar</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/necessaire.jpg"></td>
+                <td><p class="infos">Necessaire</p><br><p>Hygiene-Artikel 
+                  können beim Reisen mit dem Flugzeug <br>nicht alle mitgeführt werden.<br>Es müssen in diesem Fall die 
+                  Vorgaben der Fluggesellschaft beachtet werden.<br>Ansonsten kann man die nebenan aufgeführten 
+                  Artikel mitnehmen.</p></td>
+                <td><p class="infos">7<br>1x Zahnbürste<br>
+                  1x Zahnpasta<br>1x Schampoo<br>1x Duschmittel<br>1x Haarbürste</p></td>
+                <td>Checkbox</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- ende detailallgemein---------------------------------------------------------------------------- -->
+
+      <!-- detailfruehling--------------------------------------------------------------------------------- -->
+      <!-- Details Checkliste Fruehling -->
+      <div id="detailfruehling">
+        <div class="details">
+        <div><h4>Frühling-Ferien Checkliste</h4></div>
+          <!-- Details Checkliste (Table)-->
+          <div>
+            <table>
+              <tr class="tableheader">
+                <td class="td1"><h5>Bild</h5></td>
+                <td class="td2"><h5>Beschreibung</h5></td>
+                <td class="td3"><h5>Anzahl</h5></td>
+                <td class="td4"><h5>Checkbox</h5></td>
+              </tr>
+              <tr>
+                <td>Bild</td>
+                <td>Beschreibung</td>
+                <td>Anzahl</td>
+                <td>Checkbox</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- ende detailfruehling---------------------------------------------------------------------------- -->
+
+      <!-- detailsommer------------------------------------------------------------------------------------ -->
+      <!-- Details Checkliste Sommer -->
+      <div id="detailsommer">
+        <div class="details">
+        <div><h4>Sommer-Ferien Checkliste</h4></div>
+          <!-- Details Checkliste (Table)-->
+          <div>
+            <table>
+              <tr class="tableheader">
+                <td class="td1"><h5>Bild</h5></td>
+                <td class="td2"><h5>Beschreibung</h5></td>
+                <td class="td3"><h5>Anzahl</h5></td>
+                <td class="td4"><h5>Checkbox</h5></td>
+              </tr>
+              <tr>
+                <td>Bild</td>
+                <td>Beschreibung</td>
+                <td>Anzahl</td>
+                <td>Checkbox</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- ende detailsommer------------------------------------------------------------------------------- -->
+
+      <!-- detailherbst------------------------------------------------------------------------------------ -->
+      <!-- Details Checkliste Herbst -->
+      <div id="detailherbst">
+        <div class="details">
+        <div><h4>Herbst-Ferien Checkliste</h4></div>
+          <!-- Details Checkliste (Table)-->
+          <div>
+            <table>
+              <tr class="tableheader">
+                <td class="td1"><h5>Bild</h5></td>
+                <td class="td2"><h5>Beschreibung</h5></td>
+                <td class="td3"><h5>Anzahl</h5></td>
+                <td class="td4"><h5>Checkbox</h5></td>
+              </tr>
+              <tr>
+                <td>Bild</td>
+                <td>Beschreibung</td>
+                <td>Anzahl</td>
+                <td>Checkbox</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- ende detailherbst------------------------------------------------------------------------------- -->
+
+      <!-- detailwinter------------------------------------------------------------------------------------ -->
+      <!-- Details Checkliste Winter -->
+      <div id="detailwinter">
+        <div class="details">
+        <div><h4>Winter-Ferien Checkliste</h4></div>
+          <!-- Details Checkliste (Table)-->
+          <div>
+            <table>
+              <tr class="tableheader">
+                <td class="td1"><h5>Bild</h5></td>
+                <td class="td2"><h5>Beschreibung</h5></td>
+                <td class="td3"><h5>Anzahl</h5></td>
+                <td class="td4"><h5>Checkbox</h5></td>
+              </tr>
+              <tr>
+                <td>Bild</td>
+                <td>Beschreibung</td>
+                <td>Anzahl</td>
+                <td>Checkbox</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- ende detailwinter---------------------------------------------------------------------------- -->
+
     </main>
     <!-- Footer -->
     <footer class="page-footer font-small special-color-dark pt-2">
