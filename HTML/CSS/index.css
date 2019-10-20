@@ -11,6 +11,11 @@ body{
     color:black;
 }
 
+#leitspruch
+{
+    font-weight: bold;
+    color: red;
+}
 #navbar{
     margin: 5px;
 }

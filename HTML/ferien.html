@@ -65,7 +65,7 @@
         Dinge anzeigen, welche speiziell für die jeweilige Jahreszeit geeignet sind. Man kann die Ferien natürlich 
         noch in viele Kategorien mehr einteilen. Beim Ausbau der Webseite werden diese nach und nach ergänzt werden. 
         Diese Angaben sind Empfehlungen dazu, was man mindestens mitführen kann und keine Vorgaben!</p>
-      <p id="einleitung">Die Checklisten gelten für die folgenden Konditionen:<br>
+      <p class="einleitung">Die Checklisten gelten für die folgenden Konditionen:<br>
       -> Anzahl pro Person<br>
       -> eine Woche Ferien<br>
       -> unabhängig vom Geschlecht</p>
@@ -74,7 +74,7 @@
         <!-- Button Allgemeine Checkliste -->
         <div>
           <button class="katbuttons" id="allgemein" type="button" name="allgemein" onclick="allgemeinfunction()">
-            <h3 class="schriften">Checkliste Ferien Allgemein</h3>
+            <h3 class="schriften">Checkliste Ferien allgemein</h3>
           </button>
         </div>
 
@@ -110,7 +110,7 @@
       <!-- detailallgemein--------------------------------------------------------------------------------- -->
       <div id="detailallgemein">
         <div class="details">
-          <div><h4>Checkliste allgemein</h4></div>
+          <div><h4>Checkliste Ferien allgemein</h4></div>
           <!-- Details Checkliste (Table)-->
           <div>
             <table>
@@ -157,6 +157,12 @@
                 <td>Checkbox</td>
               </tr>
               <tr>
+                <td><img class="tabbilder" src="Bilder/nachthemd.jpg"></td>
+                <td><p class="infos">Pijama oder Nachthemd</p></td>
+                <td><p class="infos">3</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
                 <td><img class="tabbilder" src="Bilder/hosen.jpg"></td>
                 <td><p class="infos">Hosen</p></td>
                 <td><p class="infos">5<br>2x kurze<br>3x lange</p></td>
@@ -186,8 +192,14 @@
                   können beim Reisen mit dem Flugzeug <br>nicht alle mitgeführt werden.<br>Es müssen in diesem Fall die 
                   Vorgaben der Fluggesellschaft beachtet werden.<br>Ansonsten kann man die nebenan aufgeführten 
                   Artikel mitnehmen.</p></td>
-                <td><p class="infos">7<br>1x Zahnbürste<br>
+                <td><p class="infos">1x Zahnbürste<br>
                   1x Zahnpasta<br>1x Schampoo<br>1x Duschmittel<br>1x Haarbürste</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/apotheke.jpg"></td>
+                <td><p class="infos">Kleine Apotheke</p></td>
+                <td><p class="infos">1</p></td>
                 <td>Checkbox</td>
               </tr>
             </table>
@@ -201,6 +213,9 @@
       <div id="detailfruehling">
         <div class="details">
         <div><h4>Frühling-Ferien Checkliste</h4></div>
+        <div><p class="einleitung">Der Frühling ist die schönste Zeit, um Liebes-Urlaub zu machen.<br> Daher haben 
+          wir die Checkliste für die Frühlings-Ferien Spezial genau darauf abgestimmt.</p><br><p class="hinweis">Zu dieser Checkliste ist auch die 
+          allgemeine Checkliste zu beachten.</p></div>
           <!-- Details Checkliste (Table)-->
           <div>
             <table>
@@ -211,9 +226,31 @@
                 <td class="td4"><h5>Checkbox</h5></td>
               </tr>
               <tr>
-                <td>Bild</td>
-                <td>Beschreibung</td>
-                <td>Anzahl</td>
+                <td><img class="tabbilder" src="Bilder/abendgarderobe.jpg"></td>
+                <td><p class="infos">Abendgarderobe</p><br><p>Abendgarderobe bedeutet für die Dame ein Abendkleid<br>
+                  und für den Herren ein Smoking.</p></td>
+                <td><p class="infos">1 oder 2</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/reizwaesche.jpg"></td>
+                <td><p class="infos">Verführerische Unterwäsche</p><br><p>Zu einem Urlaub für Verliebte 
+                  gehört natürlich auch sexy Unterwäsche.</p></td>
+                <td><p class="infos">1 oder 2</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/geschenk.png"></td>
+                <td><p class="infos">Kleines Geschenk</p><br><p>Falls Sie eine kleine Überraschung geplant haben.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/plan.jpg"></td>
+                <td><p class="infos">Planung der zu besuchenden Orte</p><br><p>Je nachdem welche Orte man besuchen
+                  möchte und wieviele Ausflüge die Verliebten geplant haben,<br>sollte man sich einen Plan machen davon.
+                </p></td>
+                <td><p class="infos">1</p></td>
                 <td>Checkbox</td>
               </tr>
             </table>
@@ -227,6 +264,9 @@
       <div id="detailsommer">
         <div class="details">
         <div><h4>Sommer-Ferien Checkliste</h4></div>
+        <div><p class="einleitung">Der Sommer bietet sich an um Ausflüge zu Verwandten zu machen, zu Grillieren,<br>
+          oder Badeurlaub zu machen.<br>Unser Sommer-Ferien Spezial befasst sich mit einem Zelt- bzw. Camping-Urlaub.
+          <br>Diese ist mit dem Auto oder Campingwagen zu planen!</p><br><p class="hinweis">Zu dieser Checkliste ist auch die allgemeine Checkliste zu beachten.</p></div>
           <!-- Details Checkliste (Table)-->
           <div>
             <table>
@@ -237,9 +277,76 @@
                 <td class="td4"><h5>Checkbox</h5></td>
               </tr>
               <tr>
-                <td>Bild</td>
-                <td>Beschreibung</td>
-                <td>Anzahl</td>
+                <td><img class="tabbilder" src="Bilder/zelt.jpg"></td>
+                <td><p class="infos">Zelt</p><br><p>Bei einem Zelt-Urlaub darf natürlich auf keinen Fall das Zelt fehlen.
+                  <br>Dieses kann individuell gross sein und daher für eine einzelne Person oder eine ganze Gruppe sein.
+                </p></td>
+                <td><p class="infos">1 pro Person<br>oder<br>1 pro Gruppe</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/kühlbox.jpg"></td>
+                <td><p class="infos">Kühlbox</p><br><p>Die Kühlbox ist unerlässlich bei einem Zelturlaub.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/sackmesser.jpg"></td>
+                <td><p class="infos">Sackmesser</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/geschirr.png"></td>
+                <td><p class="infos">Geschirr</p><br><p>In jedem Fall sollte man Geschirr mitnehmen, ob aus Plastik oder normales.</p></td>
+                <td><p class="infos">1 Messer<br>1 Gabel<br>1 Löffel<br>1 Teller<br>1 Becher<br>1 Tasse<br>1 Schale<br>Servietten</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/abfallsack.jpg"></td>
+                <td><p class="infos">Abfallsack</p><br><p>Bei solchen Urlauben muss darauf geachtet werden, dass man seinen Müll nicht
+                  <br>liegen lässt, sondern stets einen Abfallsack bereit hält, um seinen Müll wieder mitzunehmen.</p></td>
+                <td><p class="infos">14 Stück</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/feuer.jpg"></td>
+                <td><p class="infos">Material für Feuer</p><br><p>An manchen Orten fehlt Material um Feuer zu machen.<br>Manchmal ist das Material vor 
+                  Ort auch einfach nur nass.<br> Es ist daher empfehlenswert immer etwas Material fürs Feuer machen mitzunehmen</p></td>
+                <td><p class="infos">1 Feuerzeug<br>trockenes Holz<br>Papier</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/schlafsack.jpg"></td>
+                <td><p class="infos">Schlafsack</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/decken.jpg"></td>
+                <td><p class="infos">Decke</p><br><p>Auch wichtig beim Zelten sind zusätzliche Decken.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/regenschutz.jpg"></td>
+                <td><p class="infos">Regenschutz</p><br><p>Für den Fall, dass es regnet.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/schuhe.jpg"></td>
+                <td><p class="infos">Gute Schuhe</p><br><p>Man sollte hier beachten, dass man nicht Sandalen oder Turnschuhe mitnimmt,
+                  <br>sondern wirklich gute Schuhe z.B. Wanderschuhe.<br>So schutzt man seine Füsse optimal.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/mahlzeiten.jpg"></td>
+                <td><p class="infos">Genügend Verpflegung</p><br><p>Man sollte sich im Voraus bereits informieren, 
+                  wo man sich in der Umgebung <br>des Aufenthaltsortes, verpflegen kann.Dementsprechend sollte man immer darauf achten,<br>
+                  dass man genügend Verpflegung schon mitnimmt.</p></td>
+                <td><p class="infos">1</p></td>
                 <td>Checkbox</td>
               </tr>
             </table>
@@ -253,6 +360,9 @@
       <div id="detailherbst">
         <div class="details">
         <div><h4>Herbst-Ferien Checkliste</h4></div>
+        <div><p class="einleitung">Da es im Herbst nicht mehr allzu warm ist aber die Sonne häufig das Wetter angenehm ist,
+          <br>ist dies die perfekte Zeit für einen Wander-Urlaub.</p><br><p class="hinweis">Zu dieser Checkliste ist auch die 
+          allgemeine Checkliste zu beachten.</p></div>
           <!-- Details Checkliste (Table)-->
           <div>
             <table>
@@ -263,9 +373,70 @@
                 <td class="td4"><h5>Checkbox</h5></td>
               </tr>
               <tr>
-                <td>Bild</td>
-                <td>Beschreibung</td>
-                <td>Anzahl</td>
+                <td><img class="tabbilder" src="Bilder/rucksack.jpg"></td>
+                <td><p class="infos">Rucksack</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/uebernachtung.jpg"></td>
+                <td><p class="infos">Übernachtungsmöglichkeit</p><br><p>Eine Liste mit Übernachtungsmöglichkeiten auf der Wanderroute<br>
+                  kann einem Wanderer eine grosse Hilfe sein.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/karte.jpg"></td>
+                <td><p class="infos">Karte</p><br><p>Beim Wandern hat man nicht immer Empfang mit dem Natel.<br>
+                  Es ist daher sehr wichtig immer eine Karte des entsprechenden Wander-Gebietes bei sich zu haben.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/sonnencreme.jpg"></td>
+                <td><p class="infos">Sonnencreme</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/sackmesser.jpg"></td>
+                <td><p class="infos">Sackmesser</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/abfallsack.jpg"></td>
+                <td><p class="infos">Abfallsack</p><br><p>Bei solchen Urlauben muss darauf geachtet werden, dass man seinen Müll nicht
+                  <br>liegen lässt, sondern stets einen Abfallsack bereit hält, um seinen Müll wieder mitzunehmen.</p></td>
+                <td><p class="infos">14 Stück</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/hut.jpg"></td>
+                <td><p class="infos">Hut</p><br><p>Da man beim Wandern meistens auch in die Bergen geht,<br>ist ein 
+                  Sonnenschutz in Form einer Kopfbedeckung sehr wichtig,<br>um nicht zu überhitzen.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/schuhe.jpg"></td>
+                <td><p class="infos">Gute Schuhe</p><br><p>Man sollte hier beachten, dass man nicht Sandalen oder Turnschuhe mitnimmt,
+                  <br>sondern wirklich gute Schuhe z.B. Wanderschuhe.<br>So schutzt man seine Füsse optimal.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/regenschutz.jpg"></td>
+                <td><p class="infos">Regenschutz</p><br><p>Für den Fall, dass es regnet.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/mahlzeiten.jpg"></td>
+                <td><p class="infos">Genügend Verpflegung</p><br><p>Man sollte sich im Voraus bereits informieren, 
+                  wo man sich in der Umgebung <br>des Aufenthaltsortes, verpflegen kann.Dementsprechend sollte man immer darauf achten,<br>
+                  dass man genügend Verpflegung schon mitnimmt.</p></td>
+                <td><p class="infos">1</p></td>
                 <td>Checkbox</td>
               </tr>
             </table>
@@ -279,6 +450,10 @@
       <div id="detailwinter">
         <div class="details">
         <div><h4>Winter-Ferien Checkliste</h4></div>
+          <div><p class="einleitung">Was gibt es Schöneres als im Winter in die Berge zu 
+            gehen und Schneesport zu betreiben?<br>Wir haben uns daher entschieden für die Jahreszeit Winter eine<br>
+            Checkliste zum Thema Ski-Urlaub für Sie zusammenzustellen.</p><br><p class="hinweis">Zu dieser Checkliste ist auch die 
+            allgemeine Checkliste zu beachten.</p></div>
           <!-- Details Checkliste (Table)-->
           <div>
             <table>
@@ -289,9 +464,63 @@
                 <td class="td4"><h5>Checkbox</h5></td>
               </tr>
               <tr>
-                <td>Bild</td>
-                <td>Beschreibung</td>
-                <td>Anzahl</td>
+                <td><img class="tabbilder" src="Bilder/skipass.jpg"></td>
+                <td><p class="infos">Skipass</p><br><p>Falls bereits ein Skipass erstellt wurde.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/ski.jpg"></td>
+                <td><p class="infos">Ski's oder Snowboard</p><br><p>Wer im Besitz von Ski's, Snowboard oder Schlitten ist,
+                  <br>kann diese natürlich bereits mitnehmen. Diese kann man aber auch in jedem Ski-Gebiet mieten.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/skihelm.jpg"></td>
+                <td><p class="infos">Skihelm Skibrille</p><br><p>Einige der wichtigsten Utensilien für den Wintersport<br>
+                  sind der Skihelm und die Skibrille. Jedoch kann man auch Skihelme und Skibrillen mieten.</p></td>
+                <td><p class="infos">1 Skihelm<br>1 Skibrille</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/handschuhe.jpg"></td>
+                <td><p class="infos">Handschuhe</p><br><p>Damit die Hände während dem Schneesport warm bleiben</p></td>
+                <td><p class="infos">1 Paar</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/winterjacke.jpg"></td>
+                <td><p class="infos">Gute Winterjacke</p></td>
+                <td><p class="infos">1 oder 2</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/thermoskanne.jpg"></td>
+                <td><p class="infos">Thermoskanne</p><br><p>Um in der Kälte zwischendurch einen warmen Schluck zu Trinken
+                  zu haben,<br>empfehlen wir Ihnen eine Thermoskanne mitzunehmen.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/rucksack.jpg"></td>
+                <td><p class="infos">Rucksack</p><br><p>In einem Rucksack können sie auch ihre Wertsachen und Proviant 
+                  mitnehmen<br>auf die Ski-Touren.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/sackmesser.jpg"></td>
+                <td><p class="infos">Sackmesser</p><br><p>Ein Sackmesser kann in jedem Fall nützlich sein.</p></td>
+                <td><p class="infos">1</p></td>
+                <td>Checkbox</td>
+              </tr>
+              <tr>
+                <td><img class="tabbilder" src="Bilder/karteskigebiet.jpg"></td>
+                <td><p class="infos">Karte des Skigebietes</p><br><p>Skigebiete sind meistens sehr gross.<br>Es ist daher ratsam auch 
+                  eine Übersichtskarte des entsprechenden <br>Skigebietes mitzunehmen. 
+                  Darauf finden sich auch wichtige telefonnummern und Übernachtungsmöglichkeiten.</p></td>
+                <td><p class="infos">1</p></td>
                 <td>Checkbox</td>
               </tr>
             </table>

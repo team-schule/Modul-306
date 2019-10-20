@@ -37,10 +37,17 @@ p
     font-size: 20px;
 }
 
-#einleitung
+.einleitung
 {
     font-weight: bold;
     text-align: center;
+}
+
+.hinweis
+{
+    font-weight: bold;
+    text-align: center;
+    color: red;
 }
 
 .infos
@@ -74,6 +81,7 @@ p
 
 .katbuttons:active, .katbuttons:focus
 {
+    background-color: darkslategray;
     outline: none;
 }
 
